@@ -83,7 +83,7 @@ export const botConfig = {
     deleteApprovedAfter: 30,
 
     // Role IDs allowed to manage applications.
-    managerRoles: [], // Will be populated from environment or database
+    managerRoles: [1546180691426017330], // Will be populated from environment or database
   },
 
   // =========================
@@ -141,7 +141,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "Miami Roleplay",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -217,7 +217,7 @@ export const botConfig = {
     defaultCategory: null,
 
     // Role IDs allowed to manage/support tickets.
-    supportRoles: [],
+    supportRoles: [1546180691426017330],
 
     // Priority options users/staff can assign.
     priorities: {
@@ -258,44 +258,6 @@ export const botConfig = {
     logChannel: null,
   },
 
-  // =========================
-  // GIVEAWAY SETTINGS
-  // =========================
-  giveaways: {
-    // Default giveaway duration in milliseconds.
-    // 86400000 = 24 hours.
-    defaultDuration: 86400000,
-
-    // Allowed winner count range.
-    minimumWinners: 1,
-    maximumWinners: 10,
-
-    // Allowed giveaway duration range in milliseconds.
-    // 300000 = 5 minutes.
-    minimumDuration: 300000,
-    // 2592000000 = 30 days.
-    maximumDuration: 2592000000,
-
-    // Role IDs allowed to host giveaways.
-    allowedRoles: [],
-
-    // Role IDs that bypass giveaway restrictions.
-    bypassRoles: [],
-  },
-
-  // =========================
-  // BIRTHDAY SETTINGS
-  // =========================
-  birthday: {
-    // Role ID given to users on their birthday.
-    defaultRole: null,
-
-    // Channel ID where birthday announcements are posted.
-    announcementChannel: null,
-
-    // Timezone used to calculate birthday dates.
-    timezone: "UTC",
-  },
 
   // =========================
   // VERIFICATION SETTINGS
@@ -368,20 +330,42 @@ export const botConfig = {
   // =========================
   // WELCOME / GOODBYE MESSAGES
   // =========================
-  welcome: {
-    // Welcome template posted when a user joins.
-    // Placeholders: {user}, {server}, {memberCount}
-    defaultWelcomeMessage:
-      "Welcome {user} to {server}! We now have {memberCount} members!",
-    // Goodbye template posted when a user leaves.
-    // Placeholders: {user}, {memberCount}
-    defaultGoodbyeMessage:
-      "{user} has left the server. We now have {memberCount} members.",
-    // Channel ID for welcome messages.
-    defaultWelcomeChannel: null,
-    // Channel ID for goodbye messages.
-    defaultGoodbyeChannel: null,
-  },
+// =========================
+// WELCOME / GOODBYE MESSAGES
+// =========================
+welcome: {
+// Welcome template posted when a user joins.
+// Placeholders: {user}, {server}, {memberCount}
+defaultWelcomeMessage:
+"🌴 Welcome to Miami City Roleplay™!\n\n" +
+"👋 Welcome {user} to {server}!\n" +
+"We're thrilled to have you join our community! 💙\n\n" +
+"🚀 GET STARTED:\n" +
+"• Read the rules and follow our community guidelines.\n" +
+"• Respect all players and staff members.\n" +
+"• Stay in character and enjoy your roleplay journey.\n" +
+"• No cheating, hacking, or exploiting.\n\n" +
+"🛟 NEED ASSISTANCE?\n" +
+"• Open a support ticket or contact our staff team.\n\n" +
+"🎉 Enjoy your stay and have fun in the city!\n\n" +
+"🌆 Miami City Roleplay™ | 👥 Members: {memberCount}",
+
+// Goodbye template posted when a user leaves.
+// Placeholders: {user}, {memberCount}
+defaultGoodbyeMessage:
+  "👋 **Goodbye, {user}!**\n\n" +
+  "We're sorry to see you leave Miami City Roleplay™. 💙\n" +
+  "Thank you for being part of our community!\n\n" +
+  "👥 We now have **{memberCount}** members.\n" +
+  "🌴 Hope to see you again soon!",
+
+// Channel ID for welcome messages.
+defaultWelcomeChannel: 1546190922465943672,
+
+// Channel ID for goodbye messages.
+defaultGoodbyeChannel: null,
+
+},
 
   // =========================
   // COUNTER CHANNELS
@@ -449,22 +433,22 @@ export const botConfig = {
   // Set any feature to `false` to disable it globally.
   features: {
     // Core systems.
-    economy: true,
-    leveling: true,
+    economy: false,
+    leveling: false,
     moderation: true,
     logging: true,
     welcome: true,
 
     // Community engagement systems.
-    tickets: true,
-    giveaways: true,
-    birthday: true,
-    counter: true,
+    tickets: false,
+    giveaways: false,
+    birthday: false,
+    counter: false,
 
     // Security and self-service systems.
-    verification: true,
-    reactionRoles: true,
-    joinToCreate: true,
+    verification: false,
+    reactionRoles: false,
+    joinToCreate: false,
 
     // Utility/quality-of-life modules.
     voice: true,
@@ -472,7 +456,7 @@ export const botConfig = {
     tools: true,
     utility: true,
     community: true,
-    fun: true,
+    fun: false,
     music: true,
   },
 };
