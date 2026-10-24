@@ -108,7 +108,7 @@ applications: {
     deleteApprovedAfter: 1,
 
     // Discord role IDs allowed to manage applications
-    managerRoles: ["1546180691426017330"],
+    managerRoles: ["1563476058232197170"],
   },
 
   // =========================
