@@ -24,8 +24,8 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "M Roleplay",     // this is what people actually see
-        type: 0,               // Custom
+        state: "Majestic",     // this is what people actually see
+        type: 4,               // Custom
       },
     ],
   },
@@ -141,7 +141,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Miami Roleplay",
+      text: "Majestic Roleplay",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -337,7 +337,7 @@ welcome: {
 // Welcome template posted when a user joins.
 // Placeholders: {user}, {server}, {memberCount}
 defaultWelcomeMessage:
-"🌴 Welcome to Miami City Roleplay™!\n\n" +
+"🌴 Welcome to Majestic City Roleplay™!\n\n" +
 "👋 Welcome {user} to {server}!\n" +
 "We're thrilled to have you join our community! 💙\n\n" +
 "🚀 GET STARTED:\n" +
@@ -348,13 +348,13 @@ defaultWelcomeMessage:
 "🛟 NEED ASSISTANCE?\n" +
 "• Open a support ticket or contact our staff team.\n\n" +
 "🎉 Enjoy your stay and have fun in the city!\n\n" +
-"🌆 Miami City Roleplay™ | 👥 Members: {memberCount}",
+"🌆 Majestic City Roleplay™ | 👥 Members: {memberCount}",
 
 // Goodbye template posted when a user leaves.
 // Placeholders: {user}, {memberCount}
 defaultGoodbyeMessage:
   "👋 **Goodbye, {user}!**\n\n" +
-  "We're sorry to see you leave Miami City Roleplay™. 💙\n" +
+  "We're sorry to see you leave Majestic City Roleplay™. 💙\n" +
   "Thank you for being part of our community!\n\n" +
   "👥 We now have **{memberCount}** members.\n" +
   "🌴 Hope to see you again soon!",
