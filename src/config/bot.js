@@ -102,10 +102,10 @@ applications: {
     applicationCooldown: 24,
 
     // Automatically delete denied applications after 7 days
-    deleteDeniedAfter: 7,
+    deleteDeniedAfter: 1,
 
     // Automatically delete approved applications after 30 days
-    deleteApprovedAfter: 30,
+    deleteApprovedAfter: 1,
 
     // Discord role IDs allowed to manage applications
     managerRoles: ["1546180691426017330"],
