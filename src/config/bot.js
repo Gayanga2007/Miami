@@ -58,32 +58,57 @@ export const botConfig = {
   // =========================
   // APPLICATIONS SYSTEM
   // =========================
-  applications: {
-    // Default questions shown when someone fills out an application.
+applications: {
+    // GTA V FiveM Roleplay Whitelist Application Questions
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
-      { question: "Why do you want to join?", required: true },
+      {
+        question: "What is your Discord username and your in-game name?",
+        required: true
+      },
+      {
+        question: "How old are you? (Please provide your real age.)",
+        required: true
+      },
+      {
+        question: "Do you have any previous FiveM roleplay experience? If yes, explain.",
+        required: true
+      },
+      {
+        question: "Why do you want to join our GTA V Roleplay server?",
+        required: true
+      },
+      {
+        question: "What is Roleplay (RP)? Explain in your own words.",
+        required: true
+      },
+      {
+        question: "What is the difference between IC (In Character) and OOC (Out of Character)?",
+        required: true
+      },
+      {
+        question: "Why should we accept your whitelist application?",
+        required: true
+      }
     ],
 
-    // Embed colors by application status.
+    // Embed colors by application status
     statusColors: {
       pending: "#FFA500",
       approved: "#00FF00",
       denied: "#FF0000",
     },
 
-    // How long users must wait before submitting another application (hours).
+    // Cooldown before submitting another application (hours)
     applicationCooldown: 24,
 
-    // Auto-delete denied applications after this many days.
+    // Automatically delete denied applications after 7 days
     deleteDeniedAfter: 7,
 
-    // Auto-delete approved applications after this many days.
+    // Automatically delete approved applications after 30 days
     deleteApprovedAfter: 30,
 
-    // Role IDs allowed to manage applications.
-    managerRoles: [1546180691426017330], // Will be populated from environment or database
+    // Discord role IDs allowed to manage applications
+    managerRoles: ["1546180691426017330"],
   },
 
   // =========================
